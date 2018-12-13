@@ -9,10 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imagenDetalle: UIImageView!
+    
+    @IBOutlet weak var conciertoDetalle: UILabel!
+    
+    
+    var imagenConcierto = UIImage()
+    var nombreConcierto = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        conciertoDetalle.text = nombreConcierto
+        
+        imagenDetalle.image = imagenConcierto
+        
+        
     }
 
 
